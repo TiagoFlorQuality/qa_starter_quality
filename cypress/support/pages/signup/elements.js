@@ -24,6 +24,6 @@ export const ELEMENTS = {
       emailAtribute: '[id="review-form"]>span>[type="email"]',
       reviewId: '#review',
       buttonreviewId: '#button-review',
-
+      buttonAdded:'.modal-confirm .btn',
 
 }

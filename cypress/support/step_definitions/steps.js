@@ -77,13 +77,16 @@ Then('Inserir os Valores', () => {
     signup.newimageWoman()  //utilizando ID
     signup.newquantityId() //utilizando ID
     signup.newaddcartClass() //utilizando classe
+    signup.newbuttonAdded()
 });
 And('A Revisão', () => {
     signup.newnameAtribute() //utilizando atributo
     signup.newemailAtribute() //utilizando atributo
     signup.newreviewId() //utilizando ID
+    cy.wait(3000)
 
 });    
-Then('Concluíra a Análise com Sucesso', () => {
+Then('Concluirá a Análise com Sucesso', () => {
     signup.newbuttonreviewId() //utilizando ID  
+    cy.wait(5000)
 });

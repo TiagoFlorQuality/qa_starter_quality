@@ -57,7 +57,7 @@ class novoAcesso{
           cy.get(novoLogin.mobileNumber).type('+55 21 99999-9999')
 
      }
-     //Exercicio 4 - 01/06
+     //Exercicio 4 - 25/05 - 01/06
      newvisitProduct(){
           cy.visit(novoLogin.visitProduct)
      }
@@ -81,6 +81,9 @@ class novoAcesso{
      }
      newbuttonreviewId(){
           cy.get(novoLogin.buttonreviewId).click()
+     }
+     newbuttonAdded(){
+          cy.get(novoLogin.buttonAdded).click()
      }
 
 }
