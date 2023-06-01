@@ -65,3 +65,25 @@ Then('Aparecerá Mensagem de Cadastro Feito com Sucesso', () => {
     signup.newmobileNumber()
 
 });
+
+
+//Exercicio 4 semana de entrega 25/05 - 01/06
+
+Given('Que Esteja no View Product', () => {
+   signup.newvisitProduct()
+});
+
+Then('Inserir os Valores', () => {
+    signup.newimageWoman()  //utilizando ID
+    signup.newquantityId() //utilizando ID
+    signup.newaddcartClass() //utilizando classe
+});
+And('A Revisão', () => {
+    signup.newnameAtribute() //utilizando atributo
+    signup.newemailAtribute() //utilizando atributo
+    signup.newreviewId() //utilizando ID
+
+});    
+Then('Concluíra a Análise com Sucesso', () => {
+    signup.newbuttonreviewId() //utilizando ID  
+});

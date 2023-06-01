@@ -13,5 +13,17 @@ export const ELEMENTS = {
       state: '[data-qa="state"]',
       city: '[data-qa="city"]',
       zipcode: '[data-qa="zipcode"]',
-      mobileNumber: '[data-qa="mobile_number"]'
+      mobileNumber: '[data-qa="mobile_number"]',
+      
+      //exercicio 4
+      visitProduct: 'https://automationexercise.com/product_details/1',
+      imagewomanId: '#cartModal',
+      quantityId: '#quantity',
+      addcartClass: '.product-information span .cart',
+      nameAtribute: '[id="review-form"]>span>[type="text"]',
+      emailAtribute: '[id="review-form"]>span>[type="email"]',
+      reviewId: '#review',
+      buttonreviewId: '#button-review',
+
+
 }

@@ -57,6 +57,32 @@ class novoAcesso{
           cy.get(novoLogin.mobileNumber).type('+55 21 99999-9999')
 
      }
+     //Exercicio 4 - 01/06
+     newvisitProduct(){
+          cy.visit(novoLogin.visitProduct)
+     }
+     newimageWoman(){
+          cy.get(novoLogin.imagewomanId)
+     }
+     newquantityId(){
+          cy.get(novoLogin.quantityId).clear().type('5')
+     }
+     newaddcartClass(){
+          cy.get(novoLogin.addcartClass).click()
+     }
+     newnameAtribute(){
+          cy.get(novoLogin.nameAtribute).type('Teste Nome Atributo')
+     }
+     newemailAtribute(){
+          cy.get(novoLogin.emailAtribute).type('teste-email@teste.com.br')
+     }
+     newreviewId(){
+          cy.get(novoLogin.reviewId).type('Teste utilizando captura de Elemento pelo #ID')
+     }
+     newbuttonreviewId(){
+          cy.get(novoLogin.buttonreviewId).click()
+     }
 
 }
+
 export default new novoAcesso
