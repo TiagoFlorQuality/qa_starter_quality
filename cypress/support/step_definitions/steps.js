@@ -1,5 +1,6 @@
 import {Before, Given, When, And, Then} from "cypress-cucumber-preprocessor/steps"
-import signup from "../pages/signup";
+import signup from "../pages/signup"; //importando pasta signup
+import signupmultilanguage from "../pages/signupmultilanguage"; //importando pasta multi language
 import { faker } from '@faker-js/faker';
 
 
@@ -90,3 +91,33 @@ Then('Concluirá a Análise com Sucesso', () => {
     signup.newbuttonreviewId() //utilizando ID  
     cy.wait(5000)
 });
+
+
+//Exercicio 5 utilizando if/else
+
+Given('Que Esteja na Home', () => {
+    signupmultilanguage.login()
+ });
+ 
+ When('Acessar a Página de Login', () => {
+    signupmultilanguage.loginPage()
+ });
+ And('Inserir Nome e Email Multi', () => {
+    signupmultilanguage.newName()
+    signupmultilanguage.newEmail()
+    signupmultilanguage.newbuttonSignup()
+    
+ 
+ });    
+ Then('Deverá inserir as credenciais de acordo com país de origem', () => {
+    signupmultilanguage.newPassword()
+    signupmultilanguage.newfirstNameMulti()
+    signupmultilanguage.newlastNameMulti()
+    signupmultilanguage.newCompanyMulti()
+    signupmultilanguage.newAdress1Multi()
+    signupmultilanguage.newAdress2Multi()
+    signupmultilanguage.newStateMulti()
+    signupmultilanguage.newCityMulti()
+    signupmultilanguage.newZipcodeMulti()
+    signupmultilanguage.newmobileNumberMulti()
+ });

@@ -5,4 +5,4 @@ Feature: Add Cart New
         Given Que Esteja no View Product 
         When Inserir os Valores  
         And A Revisão
-        Then Concluirá a Análise com Sucesso
+        Then Concluiimage.pngrá a Análise com Sucesso
